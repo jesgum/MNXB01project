@@ -1,0 +1,14 @@
+Filters data such that we get format 19650101 2.3
+				     19650101 3.7
+					.
+					.
+					.
+
+Apply last one twice, removes first instance of "-" in each line. 
+	awk 'BEGIN {FS = ";"} ;  /1965-/ {print $1,$3}' smhi-opendata_1_53430_20210926_101122_Lund.csv > smhi_Lund_1965 
+	sed -i 's/-//' smhi_Lund_1965 	
+
+
+Add numbering 
+	awk '{print NR " " $0}' smhi_Lund_1965 > smhi_Lund_19655
+	
