@@ -7,21 +7,30 @@
 
 using namespace std; 
 
-void tempOnDay(Int_t year, Int_t month, Int_t day) {
-ifstream file("../datasets/smhi-opendata_1_72450_20210926_100728_Boras.csv");
+void tempOnDay(TString MM, TString DD) {
 
-string helpString;
-Int_t counter = 0;
-cout << counter << endl;
-while(file >> helpString){
-  cout << helpString << endl;
-  counter++;
+  TH1I* hist = new TH1I("temperature", "Temperature;Temperature [#circC];Entries", 300, -20, 40);
+  hist->SetFillColor(kRed + 1);
+
+  ifstream file("../datasets/lund.csv");
+
+  TString Date = MM + DD;
+  TString line;
+  Double_t line_two;
   
-  if(counter > 100){
-    break;
-  }
-}
 
+  while(file >> line >> line_two) {
+    line.Remove(0,4);
+    if(line.Contains(Date)) {
+      cout << line << " : " << line_two << endl;
+      hist->Fill(line_two);
+    } // end if contains
+  } // end while file
 
-}
+  
+  Double_t mean = hist->GetMean(); //The mean of the distribution
+  Double_t stdev = hist->GetRMS(); //The standard deviation
+  TCanvas* can = new TCanvas();
+  hist->Draw();
+} // End tempOnDay
  
