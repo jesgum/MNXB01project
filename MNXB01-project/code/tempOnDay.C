@@ -1,3 +1,6 @@
+// tempOnDay.C
+// Requires the script "data_format_filter.sh" to be executed
+
 #include <TF1.h> 
 #include <TH1.h> 
 #include <TStyle.h>
@@ -13,17 +16,20 @@ void tempOnDay(TString MM, TString DD) {
   TH1I* hist = new TH1I("temperature", "Temperature;Temperature [#circC];Entries", 300, -20, 40);
   hist->SetFillColor(kRed + 1);
 
+  
   TString Date = MM + DD;
   TString line;
   Double_t line_two;
   
+
+  // Read in the data and fill histogram
   ifstream lund_file("../datasets/smhi_Lund.csv");
   while(lund_file >> line >> line_two) {
     line.Remove(0,4);
     if(line.Contains(Date)) {
       hist->Fill(line_two);
-    } // end if contains
-  } // end while file
+    }
+  }
   lund_file.close();
   cout << "Lund done" << endl;
 
@@ -32,8 +38,8 @@ void tempOnDay(TString MM, TString DD) {
     line.Remove(0,4);
     if(line.Contains(Date)) {
       hist->Fill(line_two);
-    } // end if contains
-  } // end while file
+    }
+  }
   falun_file.close();
   cout << "Falun done" << endl;
 
@@ -42,8 +48,8 @@ void tempOnDay(TString MM, TString DD) {
     line.Remove(0,4);
     if(line.Contains(Date)) {
       hist->Fill(line_two);
-    } // end if contains
-  } // end while file
+    }
+  } 
   boras_file.close();
   cout << "Boras done" << endl;
 
@@ -52,8 +58,8 @@ void tempOnDay(TString MM, TString DD) {
     line.Remove(0,4);
     if(line.Contains(Date)) {
       hist->Fill(line_two);
-    } // end if contains
-  } // end while file
+    }
+  }
   visby_file.close();
   cout << "Visby done" << endl;
 
@@ -72,8 +78,8 @@ void tempOnDay(TString MM, TString DD) {
     line.Remove(0,4);
     if(line.Contains(Date)) {
       hist->Fill(line_two);
-    } // end if contains
-  } // end while file
+    } 
+  }
   umea_file.close(); 
   cout << "Umea done" << endl;
 
@@ -82,8 +88,8 @@ void tempOnDay(TString MM, TString DD) {
     line.Remove(0,4);
     if(line.Contains(Date)) {
       hist->Fill(line_two);
-    } // end if contains
-  } // end while file
+    } 
+  } 
   lulea_file.close();
   cout << "Lulea done" << endl; 
 
@@ -92,8 +98,8 @@ void tempOnDay(TString MM, TString DD) {
     line.Remove(0,4);
     if(line.Contains(Date)) {
       hist->Fill(line_two);
-    } // end if contains
-  } // end while file
+    } 
+  }
   soderarm_file.close(); 
   cout << "Soderarm done" << endl;
 
@@ -102,11 +108,33 @@ void tempOnDay(TString MM, TString DD) {
     line.Remove(0,4);
     if(line.Contains(Date)) {
       hist->Fill(line_two);
-    } // end if contains
-  } // end while file
+    }
+  }
   falsterbo_file.close();
-  cout << "Falsterbo done" << endl; 
+  cout << "Falsterbo done" << endl;   
+
+  TString uppsala_year;
+  TString uppsala_month;
+  TString uppsala_day;
+  Double_t day_avg_temp;
+  Double_t day_avg_temp_corr;
+  Int_t city;
+
+  ifstream uppsala_file("../datasets/uppsala_tm_1722-2020.dat");
+  while(uppsala_file >> uppsala_year >> uppsala_month >> uppsala_day >> day_avg_temp >> day_avg_temp_corr >> city) {
+    if(uppsala_month.Length() == 1 ) {
+      uppsala_month.Prepend("0");
+    }
+    line = uppsala_month + uppsala_day;
+    if(line.Contains(Date)) {
+      hist->Fill(day_avg_temp_corr);
+    }  
+  }
+  uppsala_file.close();
+
+  cout << "Uppsala done" << endl; 
   cout << endl;
+  
   
   Double_t mean = hist->GetMean(); //The mean of the distribution
   Double_t stdev = hist->GetRMS(); //The standard deviation
@@ -115,9 +143,11 @@ void tempOnDay(TString MM, TString DD) {
   TCanvas* can = new TCanvas();
   hist->Draw();
 
-  //TLegend *legend = new TLegend(0.75,0.75,0.95,0.95);
-  //legend->AddEntry(hist,"Histogram","l");
-  //legend->Draw(); 
+  TLegend* leg = new TLegend(0.7,0.8,0.9,0.9);
+  TString leg_text = "Temperature on " + DD + "/" + MM;
+  leg->SetBorderSize(0);
+  leg->AddEntry(hist, leg_text, "f");
+  leg->Draw();
 
 } // End tempOnDay
  
