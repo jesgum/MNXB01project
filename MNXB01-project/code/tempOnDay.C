@@ -8,11 +8,17 @@
 #include <TLegend.h>
 #include <fstream>
 #include <iostream>
+#include <string>
 
 using namespace std; 
 
-void tempOnDay(TString MM, TString DD) {
-
+void tempOnDay(Int_t MONTH, Int_t DAY) {
+  
+  TString MM = Form("%d", MONTH);
+  TString DD = Form("%d", DAY);
+  if(MM.Length() == 1 ) {
+      MM.Prepend("0");
+  }
   TH1I* hist = new TH1I("temperature", "Temperature;Temperature [#circC];Entries", 300, -20, 40);
   hist->SetFillColor(kRed + 1);
 
@@ -144,7 +150,7 @@ void tempOnDay(TString MM, TString DD) {
   hist->Draw();
 
   TLegend* leg = new TLegend(0.7,0.8,0.9,0.9);
-  TString leg_text = "Temperature on " + DD + "/" + MM;
+  TString leg_text = "Temperature on " + DD + "/" + Form("%d", MONTH);
   leg->SetBorderSize(0);
   leg->AddEntry(hist, leg_text, "f");
   leg->Draw();
