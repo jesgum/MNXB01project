@@ -18,5 +18,7 @@ done
 sort -o $OUT_MIN $OUT_MIN
 sort -o $OUT_MAX $OUT_MAX
 
-
+# Change date to day of year
+sed -i -r 's#([0-9]{4}-[0-9]{2}-[0-9]{2})(.*)#printf "%s%s" $(date -d "\1" +%j) "\2";#ge' $OUT_MIN
+sed -i -r 's#([0-9]{4}-[0-9]{2}-[0-9]{2})(.*)#printf "%s%s" $(date -d "\1" +%j) "\2";#ge' $OUT_MAX
 
