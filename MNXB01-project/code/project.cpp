@@ -17,7 +17,7 @@ void TempPerDay() {
 
 void TempOnDay(int Month, int Day) {
 	system("data_cleaner.sh");  //Calls batch script to filer data
-	tempOnDay(Month, Day);
+	tempOnDay(Month, Day);		//Remove this
 }
 
 void Compare(int Month) {
