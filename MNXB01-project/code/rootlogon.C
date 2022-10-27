@@ -18,7 +18,7 @@ void rootlogon() {
   //  that you've seen in the course. Note that paths cannot be relative or use
   //  ~
   //gSystem->AddIncludePath("-I/home/einarelen/project/include");
-  gSystem->AddIncludePath("-I/home/jesgum/mnxb01project/MNXB01project/MNXB01-project/code/include");
+  gSystem->AddIncludePath("-I/home/akamal/git/MNXB01project/MNXB01-project/code/include");
   //  You can add multiple flags if you have multiple directories to add
   // gSystem->AddIncludePath("-I/home/einarelen/project/include -I/home/einarelen/project/external/include");
   // Or you can keep adding them one by one, which looks neater
