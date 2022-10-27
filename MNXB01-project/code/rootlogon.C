@@ -10,7 +10,8 @@ void rootlogon() {
   gStyle->SetPadBottomMargin(0.16);
   gStyle->SetPadLeftMargin(0.16);
 
-  gStyle->SetFillColor(42);
+  gStyle->SetCanvasColor(42);
+  gStyle->SetLegendFillColor(26);
 
 
   // Tell the compiler where to look for headers. Use the same kinds of flags

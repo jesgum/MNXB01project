@@ -1,6 +1,6 @@
 // tempOnDay.C
-// Requires the script "data_format_filter.sh" to be executed
-
+// Requires the script "data_cleaner.sh" to be executed
+//Remove
 #include "TF1.h" 
 #include "TH1.h" 
 #include "TStyle.h"

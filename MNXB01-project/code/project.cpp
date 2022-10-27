@@ -1,18 +1,28 @@
 #include "tempTrender.h"
-//#include "tempTrender.cpp"
+
+#include "tempOnDay.C"
+#include "comp.C"
 
 #include <string>
 #include <iostream>
 using namespace std;
 
-void project() {
-	const string pathToFile = "/home/akamal/git/MNXB01project/MNXB01-project/datasets/smhi_Lund_1965";   //"../datasets/smhi_Lund_1965" 
+void TempPerDay() {
+	const string pathToFile = "/home/akamal/git/MNXB01project/MNXB01-project/datasets/smhiLund_8089.csv";  
+
 	tempTrender t(pathToFile); //Instantiate your analysis object
 
 	cout << "cpp file works" << endl;
 	cout << t.tempPerDay() << endl;
 }
 
-int main() {
-	project();
+void TempOnDay(int Month, int Day) {
+	system("data_cleaner.sh");  //Calls batch script to filer data
+	tempOnDay(Month, Day);		//Remove this
 }
+
+void Compare(int Month) {
+	system("data_cleaner.sh");
+	comp(Month);
+}
+
