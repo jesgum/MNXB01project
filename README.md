@@ -13,16 +13,17 @@ How to use this shared repository:
 
 
 
-How to compile and run the code:
+# How to compile and run the code:
 ~                                        
 
-How to compile Jesper's part:
+## How to compile Jesper's part:
 
-# tempOnDay
-1. From this directory as source go to /MNXB01-project/code
-2. Run bash script "data_cleaner.sh"
-2.5 (Optional) open tempOnDay and choose dataset, default is Lund.
-3. Open "Root" 
-4. Load the tempOnDay function ".L tempOnDay.C"
-5. Generate histogram tempOnDay(Int_t month, Int_t day), example "tempOnDay(6,19)"
-6. Histogram is also saved as 'tempOnDay.jpg'
+### TempOnDay(int Month, int Day)
+1. Specify include path for header(s) in "rootlogon.C" ~/MNXB01-project/code (please use full path and not relative).
+2. Start "root"
+3. Now you can call "[] TempOnDay(int Month, int Day)
+
+### Comp(int Month)
+1. Same as tempOnDay 1
+2. Same as tempOnDay 2
+3. Now you can call "[] Comp(int Month)
