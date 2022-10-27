@@ -4,7 +4,9 @@ Zack:
 
 
 Jesper:
-Creating tempOnDay using root.
+Create "tempOnDay.C" that takes month and day as argument and return a histogram containing the temperatures of that day throughout the years.
+Create "comp.C" that compares the temperature of a given month between two datasets.
+Bash script "data_cleaner.sh" which cleans data so its easier to read for "tempOnDay.C" and "comp.C"
 
 Ashar:
 ~              
