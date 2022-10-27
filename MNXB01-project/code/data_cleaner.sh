@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Formatting datasets..."
+echo "Cleaning datasets..."
 
 FILE=../datasets/smhi_Falsterbo.csv
 if ! [[ -f "$FILE" ]]; then
