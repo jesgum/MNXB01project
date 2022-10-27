@@ -2,6 +2,11 @@ Division of workload:
 
 Zack:
 
+Create min and max temp files using the datafilter.sh, use csvreader.cpp file to obtain useful data for plot, and plot data using hist1.cpp, using correct flags for compiling.
+This should give you a histogram for the hottest and coldest days of each year, for the given dataset.
+
+
+
 
 Jesper:
 
