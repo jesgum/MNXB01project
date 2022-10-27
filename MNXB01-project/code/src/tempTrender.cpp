@@ -10,22 +10,30 @@ tempTrender::tempTrender(const std::string& filePath) {
 	ifstream file(filePath);
 	double num1{-1}; int num2{-1};double num3{-1};
 	int i{0};
-	vector<double> Temp{};
+	//int j{0};
+	vector<double> Temp{}; vector<double> ATemp{};
 	while(file >> num1 >> num2 >> num3) {
 		Temp.push_back(num3);
 		if ((i+1)%3==0) {
-			int j = (i+1)/3-1;
-			_Day[j]=j;
-			_Temp[j]=(Temp[i]+Temp[i-1]+Temp[i-2])/3;
+			//int k = (i+1)/3-1;
+			//_Day[k]=k;
+			ATemp.push_back((Temp[i]+Temp[i-1]+Temp[i-2])/3);
 		};
 		i++;
+	}
+	for (int j=0; j<365; j++) {
+		int a{0};
+		for (int k=0; k<10; k++) {
+			a+=ATemp[j+k*365];
+		}
+		_Temp[j]=a/10;
 	}
 }
 
 
 std::string tempTrender::tempPerDay() const {
 	TCanvas* c1 = new TCanvas("c1", "TempPerDay canvas", 900, 600);
-	c1->SetFillColor(42);
+	//c1->SetFillColor(42);
 
 	TH1D* PerDayHist = new TH1D("PerDayHist", "Temperature for every day of the year",365, 1, 366);
 	for(int bin=1; bin<366; ++bin) {

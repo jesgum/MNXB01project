@@ -18,7 +18,7 @@ class tempTrender {
 	std::string tempPerDay() const; 
 	
 	private:
-		int _Day[365];
+		//int _Day[365];
 		double _Temp[365];
 };
 #endif
