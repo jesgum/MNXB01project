@@ -47,9 +47,12 @@ std::string tempTrender::tempPerDay() const {	//Constructing histogram
 	PerDayHist->SetTitle("Temperature for every day of the year");
 	PerDayHist->GetXaxis()->SetTitle("Day");
 	PerDayHist->GetYaxis()->SetTitle("Temperature [#circC]");
+	PerDayHist->GetYaxis()->CenterTitle(true);
+	PerDayHist->GetXaxis()->CenterTitle(true);
+
 
 	PerDayHist->Draw();
-	return "Created histogram";
+	return "Here is a histogram of the daily average temperature between 1981-1990";
 } 
 
 
