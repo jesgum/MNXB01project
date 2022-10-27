@@ -21,9 +21,9 @@ How to use this shared repository:
 ### TempOnDay(int Month, int Day)
 1. Specify include path for header(s) in "rootlogon.C" ~/MNXB01-project/code (please use full path and not relative).
 2. Start "root"
-3. Now you can call "[] TempOnDay(int Month, int Day)
+3. Now you can call "[] TempOnDay(int Month, int Day)"
 
 ### Comp(int Month)
 1. Same as tempOnDay 1
 2. Same as tempOnDay 2
-3. Now you can call "[] Comp(int Month)
+3. Now you can call "[] Comp(int Month)"
