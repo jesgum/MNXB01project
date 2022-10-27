@@ -186,7 +186,7 @@ void tempOnDay(Int_t MONTH, Int_t DAY) {
   Double_t mean = hist->GetMean();
   Double_t stdev = hist->GetRMS();
   cout << "Mean: " << mean << endl;
-  cout << "Stdev : " << stdev << endl;
+  cout << "Stdev: " << stdev << endl;
 
   // Histogram options
   TCanvas* can = new TCanvas();
@@ -196,7 +196,7 @@ void tempOnDay(Int_t MONTH, Int_t DAY) {
   leg->SetBorderSize(0);
   leg->AddEntry(hist, leg_text, "f");
   leg->Draw();
-  can->SaveAs("tempOnDay.jpg");
+  can->SaveAs("tempOnDay.png");
 
 } // End tempOnDay
 
