@@ -12,7 +12,7 @@ I've constructed a main and work branch. You guys pull it. Create and edit files
 ## How to compile Jesper's part:
 
 ### TempOnDay(int Month, int Day)
-1. Specify include path for header(s) in "rootlogon.C" ~/MNXB01-project/code (please use full path and not relative).
+1. Specify include path for header(s) in "rootlogon.C" ~/MNXB01-project/code/include (please use full path and not relative).
 2. Start "root"
 3. Now you can call "[] TempOnDay(int Month, int Day)"
 
