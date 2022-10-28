@@ -42,7 +42,7 @@ I've constructed a main and work branch. You guys pull it. Create and edit files
 
 ## How to compile Ashar's part:
 
-## TempPerDay()
+### TempPerDay()
 1. Same as tempOnDay 1
 2. Same as tempOnDay 2
 3. Now you can call "[] TempPerDay()"
