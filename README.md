@@ -43,6 +43,7 @@ I've constructed a main and work branch. You guys pull it. Create and edit files
 ## How to compile Ashar's part:
 
 ### TempPerDay()
-1. Same as tempOnDay 1
-2. Same as tempOnDay 2
-3. Now you can call "[] TempPerDay()"
+1. Run data_cleaner2.sh, located in /code
+2. Same as tempOnDay 1
+3. Same as tempOnDay 2
+4. Now you can call "[] TempPerDay()"
