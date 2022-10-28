@@ -1,19 +1,25 @@
 #ifndef TEMPTRENDER_H
 #define TEMPTRENDER_H
 
+#include <vector>
 #include <string>
+#include <iostream>
+#include <fstream>
+#include <cmath>
+ 
+using namespace std;
+
+
 class tempTrender {
 	public:
-	explicit tempTrender(const std::string& filePath); //Construct using the specified file
+	explicit tempTrender(const std::string& filePath); //Constructor initializes Average daily temperature
+							   // over a period of years, and associated error bars
 	~tempTrender() {} //Destructor
 
-	// void tempOnDay(int monthToCalculate, int dayToCalculate) const; //Make a histogram of the temperature on this day
-	// void tempOnDay(int dateToCalculate) const; //Make a histogram of the temperature on this date
-	// void tempPerDay() const; //Make a histogram of the average temperature of each day of the year
-	// void hotCold() const; //Make a histogram of the hottest and coldest day of the year
-	// void tempPerYear(int yearToExtrapolate) const; //Make a histogram of average temperature per year, then fit and extrapolate to the given year
-
-	private:
+	std::string tempPerDay() const; //tempPerDay memeber function constructs the histogram with error bars
 	
+	private:
+		double _Error[365];	//Error assocoiated with measurment. 365 entries for 365 days of the year.
+		double _Temp[365];	//Measurment itself. 29 february (extra day in leap year) removed in filtering process!
 };
 #endif
