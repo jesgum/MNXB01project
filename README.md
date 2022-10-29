@@ -35,10 +35,10 @@ I've constructed a main and work branch. You guys pull it. Create and edit files
 2. Start "root"
 3. Now you can call "[] TempOnDay(int Month, int Day)"
 
-### Comp(int Month)
+### Compare(int Month)
 1. Same as tempOnDay 1
 2. Same as tempOnDay 2
-3. Now you can call "[] Comp(int Month)"
+3. Now you can call "[] Compare(int Month)"
 
 ## How to compile Ashar's part:
 
