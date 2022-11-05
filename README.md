@@ -10,7 +10,7 @@ I've constructed a main and work branch. You guys pull it. Create and edit files
 
 # How to compile and run the code:
 
-##How to compile Zack's part:
+## How to compile Zack's part:
 
 1. Specify input file for datafilter.sh.
  e.g. test.csv
@@ -24,10 +24,7 @@ I've constructed a main and work branch. You guys pull it. Create and edit files
 
 4. When compling hist1.cpp make sure to use root config to get the correct flags
  e.g - g++ hist1.cpp $(root-config --glibs --cflags --libs) -o main 
-
-
-                                        
-
+     
 ## How to compile Jesper's part:
 
 ### TempOnDay(int Month, int Day)
@@ -35,10 +32,10 @@ I've constructed a main and work branch. You guys pull it. Create and edit files
 2. Start "root"
 3. Now you can call "[] TempOnDay(int Month, int Day)"
 
-### Comp(int Month)
+### Compare(int Month)
 1. Same as tempOnDay 1
 2. Same as tempOnDay 2
-3. Now you can call "[] Comp(int Month)"
+3. Now you can call "[] Compare(int Month)"
 
 ## How to compile Ashar's part:
 
