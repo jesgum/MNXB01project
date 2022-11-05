@@ -8,7 +8,7 @@
 using namespace std;
 
 void TempPerDay() {
-	const string pathToFile = "/home/akamal/git/MNXB01project/MNXB01-project/datasets/smhiLund_8089.csv";  
+	const string pathToFile = "../datasets/smhiLund_8089.csv";  
 	tempTrender t(pathToFile); //Instantiate your analysis object
 
 	cout << t.tempPerDay() << endl;
