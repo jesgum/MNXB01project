@@ -1,5 +1,413 @@
-The commit history(in a nicer format) will be pasted in here
-at the end. If you want to do it another way, let me know!
+commit 9551f575a8f14df5c589d7c6f389eb6b40846b7b
+Merge: 4ce78ff 47a5acc
+Author: AsharKamal98 <113696122+AsharKamal98@users.noreply.github.com>
+Date:   Fri Oct 28 08:53:53 2022 +0200
+
+    Merge pull request #9 from zackmoe09/main
+    
+    Zacks Merge
+
+commit 47a5acc28ef1f3fa5c0d1ae15d27bdd2d33e45a9
+Author: Zakaria Mohamed <zakimohammed_10@hotmail.co.uk>
+Date:   Fri Oct 28 02:39:28 2022 +0200
+
+    Example file for Borås dataset
+
+commit 0404a269ec149529761ea32a868806aa746539b7
+Author: Zakaria Mohamed <zakimohammed_10@hotmail.co.uk>
+Date:   Fri Oct 28 02:38:57 2022 +0200
+
+    Add Legend to plot
+
+commit 4ce78ff9ad421470b69af9879f32ddcc834e0592
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Fri Oct 28 01:55:16 2022 +0200
+
+    Centered axis title's
+
+commit 9425f881c792cf6cde633e000197337d756238a3
+Author: Zakaria Mohamed <zakimohammed_10@hotmail.co.uk>
+Date:   Fri Oct 28 01:48:06 2022 +0200
+
+    Add Zakaria's Workplan
+
+commit 040fe34055d428e18c8017f5ff6fd48dbd626cd6
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Fri Oct 28 01:35:43 2022 +0200
+
+    Small changes / comments to project.cpp and WorkPlan
+
+commit cf1a157bc721601695cf1c93e6a35e3ff870bfd7
+Author: Zakaria Mohamed <zakimohammed_10@hotmail.co.uk>
+Date:   Fri Oct 28 01:16:51 2022 +0200
+
+    Add fitting
+
+commit ab46d936a3e5c30515338cb3bc5bda0ed4fddc52
+Author: Zakaria Mohamed <zakimohammed_10@hotmail.co.uk>
+Date:   Fri Oct 28 01:07:51 2022 +0200
+
+    Add plotting file
+
+commit 49de3d6bbd3247f04a3dc7f68221ee19c9ce2279
+Merge: 1e737af 0f17c2a
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Fri Oct 28 01:03:26 2022 +0200
+
+    Merge branch 'main' of github.com:AsharKamal98/MNXB01project into main
+
+commit 1e737af26f76549e61dc38e727d179ef2637e149
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Fri Oct 28 01:00:50 2022 +0200
+
+    Added error bars to histogram in source file, as well as comments
 
 
+commit 92d9bb9ccad09208ee357e7f20b5a8c15df0bbb3
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Fri Oct 28 00:23:14 2022 +0200
 
+    Updated README and Workplan
+
+commit e56dc7e66009fae5783fa3106a1eb7524c27544e
+Merge: b6ffa8f caeb2a9
+Author: AsharKamal98 <113696122+AsharKamal98@users.noreply.github.com>
+Date:   Fri Oct 28 00:10:27 2022 +0200
+
+    Merge pull request #5 from AsharKamal98/main
+    
+    Removed CommandHistory file
+
+commit caeb2a9208f58218c69acfeafafbd4e90f8b4604
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Fri Oct 28 00:08:25 2022 +0200
+
+    Removed CommandHistory file
+
+commit b6ffa8fc8fa6deec66bf7ce801796515f560f535
+Merge: 6dfa139 07ff1f0
+Author: AsharKamal98 <113696122+AsharKamal98@users.noreply.github.com>
+Date:   Fri Oct 28 00:05:12 2022 +0200
+
+    Merge pull request #4 from AsharKamal98/main
+    
+    Merging main with work
+
+commit 07ff1f01dc21f3513f596c8a6df05f02c5f1c96e
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Fri Oct 28 00:02:19 2022 +0200
+
+    fixed path in rootlogon.C
+
+commit eb74e131c09e67ec3e6137f10078f4d20bb9e664
+Merge: 5a7abf2 c9c5634
+Author: AsharKamal98 <113696122+AsharKamal98@users.noreply.github.com>
+Date:   Thu Oct 27 23:44:12 2022 +0200
+
+    Merge pull request #3 from jesgum/main
+    
+    Updated "README.md", "WorkPlan" and "rootlogon.C"
+
+commit 5a7abf22cfb50cab8127158e8ccf04c926cec182
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Thu Oct 27 23:39:24 2022 +0200
+
+    Pushing before mentioned batch script
+
+commit dbfb478a2ba7066b0f882633015a7c8c8af2c215
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Thu Oct 27 23:37:34 2022 +0200
+
+    Created new batch script data_cleaner2.sh which  filters a data file for Lund 1981-1990. It takes the leap years into account and removed any entries for 29 February, if any exist. Remaining files updated to calculate daily average temperature during this period
+
+commit 7e361bcaf3dca0555094f853beae39b7eca79558
+Author: Zakaria Mohamed <zakimohammed_10@hotmail.co.uk>
+Date:   Thu Oct 27 21:44:44 2022 +0200
+
+    This is an updated version of the previous, made of a function that takes txt input, and produces a txt file as output with first coloumn data
+
+commit 3484c7a4adf61bf899c91d57329c68535d10cdc3
+Author: Zakaria Mohamed <zakimohammed_10@hotmail.co.uk>
+Date:   Thu Oct 27 21:36:28 2022 +0200
+
+    C++ code that isolates only first column and stores values as a txt file
+
+commit c9c5634b3f7d5a700cd246e127546e89aa51dc41
+Merge: 52d7613 8a43bdc
+Author: jesgum <113693781+jesgum@users.noreply.github.com>
+Date:   Thu Oct 27 20:49:05 2022 +0200
+
+    Merge pull request #7 from jesgum/work
+    
+    Update README.md
+
+commit 8a43bdc8d4288ba1ab7efc1dadb1e86e82d8bc76
+Author: jesgum <113693781+jesgum@users.noreply.github.com>
+Date:   Thu Oct 27 20:48:21 2022 +0200
+
+    Update README.md
+
+commit 52d76137c91ffecacdb78542fd8f0464d8adf094
+Merge: 7df9b5e cf541b9
+Author: jesgum <113693781+jesgum@users.noreply.github.com>
+Date:   Thu Oct 27 20:46:21 2022 +0200
+
+    Merge pull request #6 from jesgum/work
+    
+    Work
+
+commit cf541b9e330a7b5e8eec6880830a92b216d90e4c
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Thu Oct 27 20:45:14 2022 +0200
+
+    How to use Jesper's code and workplan
+
+commit c78dfbe6d27bb370492d25af7201fd537180a21a
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Thu Oct 27 20:43:37 2022 +0200
+
+    Set default color of histogram canvas and histogram legend in 'rootlogon.C'
+
+commit 0521a363642822b3c80e707155ffdf90ecd29616
+Author: Zakaria Mohamed <zakimohammed_10@hotmail.co.uk>
+Date:   Thu Oct 27 18:39:21 2022 +0200
+
+    This is a modified script which changes the dates to day of year number.
+
+commit f1459ba0a9628d29697e768da9defd30581c7676
+Author: Zakaria Mohamed <zakimohammed_10@hotmail.co.uk>
+Date:   Thu Oct 27 18:08:26 2022 +0200
+
+    This bash script isolates each year in the data file, orders the temperatures from lowest to highest, takes the min and max for eachyear and stores them in each in a different output file
+
+commit 7df9b5e5e815c2ebaccb0e1c0e120908ee03869b
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Thu Oct 27 18:00:23 2022 +0200
+
+    Included Jesper's in the main project.cpp file under individual functions such that the root figures are plotted by calling these functions. Also added input parameters to these functions, which are plugged into the root scripts
+
+commit 06d6c42f6670c5307521a14f4f64b57bbc4f42ce
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Thu Oct 27 17:54:17 2022 +0200
+
+    Included Jesper's in the main project.cpp file under individual functions such that the root figures are plotted by calling these functions. Also added input parameters to these functions, which are plugged into the root scripts
+
+commit 6dfa139905cb07564ccce268271950ffc80afa69
+Merge: 26ab00b 973e7fe
+Author: AsharKamal98 <113696122+AsharKamal98@users.noreply.github.com>
+Date:   Thu Oct 27 17:15:41 2022 +0200
+
+    Merge pull request #2 from AsharKamal98/main
+    
+    Why not
+
+commit 973e7fed9992ea8d691cef3eb25f594759f2a65e
+Merge: 26ab00b 3e2375c
+Author: AsharKamal98 <113696122+AsharKamal98@users.noreply.github.com>
+Date:   Thu Oct 27 17:10:52 2022 +0200
+
+    Merge pull request #1 from jesgum/main
+    
+    Merging Jesper's fork to the release manager's repository.
+
+commit 26ab00b82e5dd698f01bb87d85ebe38976872fc4
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Thu Oct 27 17:04:46 2022 +0200
+
+    Clean up of directory
+
+commit c38b39af09f3c03267c54950f8b98913d7bdf0f6
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Thu Oct 27 16:57:12 2022 +0200
+
+    Updated source file. Plots a histogram of average temperature of each day in Lund year 1965
+
+commit 3e2375c07ba7ae0fb1ea771c0bfac91c6da5a435
+Merge: c929119 d6e16a1
+Author: jesgum <113693781+jesgum@users.noreply.github.com>
+Date:   Thu Oct 27 16:37:13 2022 +0200
+
+    Merge pull request #5 from jesgum/work
+    
+    Work
+
+commit d6e16a127d406909abf829c44dfa3aa7a1bc9215
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Thu Oct 27 16:36:27 2022 +0200
+
+    Finalized some details for 'tempOnDay.C'
+
+commit 7ed3481b3ce4dc793407e8007d2ab20138e1ef84
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Thu Oct 27 16:34:40 2022 +0200
+
+    Added a rootscript 'comp.C' that compares the temperature between two cities for a given month (int)
+
+commit 662502259e7c6d1adc0e7015defc8fcb263d1d5d
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Thu Oct 27 12:41:40 2022 +0200
+
+    cleaned up projejt, header and source file, and edited them such that they can be executed in root. Currently the class produces an empty canvas
+
+commit c9291196cc162e77929806ebc5a060c5fe558525
+Merge: 937a5e5 8a59405
+Author: jesgum <113693781+jesgum@users.noreply.github.com>
+Date:   Thu Oct 27 11:33:58 2022 +0200
+
+    Merge pull request #4 from jesgum/work
+    
+    Work
+
+commit 8a5940545e1bafda112e447999044cd3a5cc681a
+Merge: 0c99fde 937a5e5
+Author: jesgum <113693781+jesgum@users.noreply.github.com>
+Date:   Thu Oct 27 11:33:45 2022 +0200
+
+    Merge branch 'main' into work
+
+commit 0c99fde3091fae057aea254c5a3bdb96bd1c099b
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Thu Oct 27 11:30:14 2022 +0200
+
+    filename change
+
+commit 3d0d3bf48b06c01a9507dd49f29dca03279b14aa
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Thu Oct 27 11:22:25 2022 +0200
+
+    Added possibility to select dataset for tempOnday.C, changes to readme and workplan
+
+commit 937a5e51cc943c73361b619449513fce11fa6632
+Merge: c8896ab 082ddcc
+Author: jesgum <113693781+jesgum@users.noreply.github.com>
+Date:   Thu Oct 27 11:09:58 2022 +0200
+
+    Merge pull request #3 from jesgum/work
+    
+    Work
+
+commit 082ddcc9fd198060a88e0f2737282c00de5859d5
+Author: jesgum <113693781+jesgum@users.noreply.github.com>
+Date:   Thu Oct 27 11:08:40 2022 +0200
+
+    Minor echo change
+
+commit ce6b5515524f2fcaceadf3f491a35609339ccb65
+Author: jesgum <113693781+jesgum@users.noreply.github.com>
+Date:   Thu Oct 27 11:07:34 2022 +0200
+
+    Rename data_format_filter.sh to data_cleaner.sh
+
+commit 1a1d7779fece687ab217073f52e75762e58b9a3d
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Wed Oct 26 14:03:38 2022 +0200
+
+    Adding the data file used for testing, called Test1. It has a similiar format to the real data, but with fewer (24) entries
+
+commit 9245c31a6a9464df5c68f1039c5ee34aa0f63e6a
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Wed Oct 26 13:57:51 2022 +0200
+
+    Moved initialization of constructors and member functions from the header tempTrender.h to the tempTrender.cpp source file. Now only declaration occurs in the header, and the definitions are stored in the source file
+
+commit c8896ab709b159b4b5db136c85b23a1144cc0063
+Merge: fbd5654 f92c1ad
+Author: jesgum <113693781+jesgum@users.noreply.github.com>
+Date:   Wed Oct 26 13:22:16 2022 +0200
+
+    Merge pull request #2 from jesgum/work
+    
+    Work
+
+commit f92c1ad4d4530e53b429e9ec7c5d47b00f42db12
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Wed Oct 26 13:20:38 2022 +0200
+
+    Removed unnecessary #include
+
+commit a789835ca46c650e9c605e32445dd5a6201b0262
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Wed Oct 26 13:17:24 2022 +0200
+
+    Edited the legend in tempOnDay.C too look more like the example and made the function take integers instead of strings which is more aligned with 'code skeleton'.
+
+commit bbe381423adc2d4b203a780b994f788dc6c76277
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Wed Oct 26 11:58:31 2022 +0200
+
+    Added legend to histogram displaying date to tempOnDay.C and made it read the Uppsala_tm_17722-2020.dat data aswell
+
+commit fbd565464852de08415247f3ef06cfe93847d6ba
+Merge: 54942cd 7594af0
+Author: jesgum <113693781+jesgum@users.noreply.github.com>
+Date:   Tue Oct 25 22:57:55 2022 +0200
+
+    Merge pull request #1 from jesgum/work
+    
+    Work
+
+commit 7594af0e0e3f719cd879d9c643ffa0a46aee8a12
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Tue Oct 25 22:14:13 2022 +0200
+
+    Changed tempOnDay.C to loop through all the datasets formatted by the bash script data_format_filter.sh
+
+commit 4dfee6e84cf3a129b74a00dc88e6ef5e882e3137
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Tue Oct 25 21:13:58 2022 +0200
+
+    Bash script that formats all datasets except Uppsala
+
+commit fdbc5f3baa5a7bc31e2032faae504a09958e5c7e
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Tue Oct 25 19:21:14 2022 +0200
+
+    initial commit tempOnDay.C
+
+commit 868a9297122880c1bc6af258084c865391c44306
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Tue Oct 25 19:02:50 2022 +0200
+
+    Initialized _Temp and _Day vectors in constructor inside tempTrender.h. _Temp vector contains the average temperature (averaged over three measurments) for every day and _Day is simply a vector of increasing integers. Currently, the code does not read the modified smhi_Lund_1965, but rather some arbritrary test file in a similiar format to our data. Caution: test file not included in repository, change to data file with appropriate format.
+
+commit e29dc9088283be2b81d185ae7f1e0b2ff3c1362c
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Mon Oct 24 20:03:07 2022 +0200
+
+    Created a modified data set file for Lund for the year 1965 + added the used commands in CommandHistory file
+
+commit 10a651681beeb38930730f19ef1ad6d7290710b7
+Author: Jesper <je8022ka-s@student.lu.se>
+Date:   Sat Oct 22 15:55:01 2022 +0200
+
+    Creaton of the tempOnDay.C root file
+
+commit 7a4175010adc7b885f113edc5b07bf982278ec68
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Sat Oct 22 14:46:43 2022 +0200
+
+    Ignore. Removed test directory
+
+commit 3396f0c48a0564d97d4acbbd34ff32009c9c0ca0
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Sat Oct 22 14:43:32 2022 +0200
+
+    Added project file to repository
+
+commit 98c1807bbe42ac9be9a2c6174e9c2139a2b37a23
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Sat Oct 22 14:39:18 2022 +0200
+
+    Ignore. Pushing a test directory with test file inside
+
+commit 8bb0aa0d553f9840779feb83734289705eba7b19
+Author: Ashar Kamal <ashar.kamal98@gmail.com>
+Date:   Sun Oct 16 19:55:16 2022 +0200
+
+    Added Read me, change log and work plan
+
+commit 943ee36027acf1c3406bd6b3482ff8e0ee662e58
+Author: AsharKamal98 <113696122+AsharKamal98@users.noreply.github.com>
+Date:   Sun Oct 16 19:50:31 2022 +0200
+
+    Initial commit
