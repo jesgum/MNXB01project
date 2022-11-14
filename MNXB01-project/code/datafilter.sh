@@ -1,3 +1,5 @@
+#!/bin/bash
+
 
 FILE='test'
 OUT_MAX=max.txt

@@ -8,21 +8,17 @@ I've constructed a main and work branch. You guys pull it. Create and edit files
 
 
 
+<<<<<<< HEAD
+=======
 # How to compile and run the code:
 
 ## How to compile Zack's part:
 
-1. Specify input file for datafilter.sh.
- e.g. test.csv
+1. Open file datafilter.sh, at the second line edit FILE to be the name of your file without any extension, e.g. FILE='myfilename'. Run this code on the bash terminal. This should createtwo different files called min.txt and max.txt, you can change the name of these output files by editing the 3rd and 4th line, e.g. OUT_MIN=yourfilename.txt.
 
-2. Use output file as input for csvreader.cpp, this should give a single file txt file as output
- e.g input-> test.csv
-     output -> testVals.txt
+2. Compile the csvreader-2.cpp file and run, make sure you edit the input file names if changed in the previous bash file. This should then result in two more output files maxVals.txt and minVals.txt. 
 
-3. Use the value file made as input for plotting code, hist1.cpp. This takes 2 files as input
- e.g. input -> minVals.txt, maxVals.txt
-
-4. When compling hist1.cpp make sure to use root config to get the correct flags
+3. The final step is to compile and run the hist1.cpp code, When compling hist1.cpp make sure to use root config to get the correct flags. When compling hist1.cpp make sure to use root config to get the correct flags
  e.g - g++ hist1.cpp $(root-config --glibs --cflags --libs) -o main 
      
 ## How to compile Jesper's part:
