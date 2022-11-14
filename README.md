@@ -6,10 +6,6 @@ I've constructed a main and work branch. You guys pull it. Create and edit files
 
 
 
-
-
-<<<<<<< HEAD
-=======
 # How to compile and run the code:
 
 ## How to compile Zack's part:
