@@ -2,6 +2,8 @@ Division of workload:
 
 Zack:
 
+Create min and max temp files using the datafilter.sh, use csvreader.cpp file to obtain useful data for plot, and plot data using hist1.cpp, using correct flags for compiling.
+This should give you a histogram for the hottest and coldest days of each year, for the given dataset.
 
 Jesper:
 Create "tempOnDay.C" that takes month and day as argument and return a histogram containing the temperatures of that day throughout the years.
@@ -9,4 +11,4 @@ Create "comp.C" that compares the temperature of a given month between two datas
 Bash script "data_cleaner.sh" which cleans data so its easier to read for "tempOnDay.C" and "comp.C"
 
 Ashar:
-Declare/initialize constructor which in "tempTrender.h/tempTrender.cpp" which intitializes an array (as a member variable) containing average daily temperature over some period of years. Construct a member function in the class, it should plot the histogram with error bars. The class is called in project.cpp. Above mention filtering done in bash script "data_cleaner2.sh".               
+Declare/initialize constructor which in "tempTrender.h/tempTrender.cpp" which intitializes an array (as a member variable) containing average daily temperature over some period of years. Construct a member function in the class, it should plot the histogram with error bars. The class is called in project.cpp. Above mentioned filtering done in bash script "data_cleaner2.sh". Worked as release manager.               

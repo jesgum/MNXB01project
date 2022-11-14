@@ -4,7 +4,7 @@
 
 for i in {1981..1990}
 do
-	grep "$i" smhi-opendata_1_53430_20210926_101122_Lund.csv >> TempFile1
+	grep "$i" ../datasets/smhi-opendata_1_53430_20210926_101122_Lund.csv >> TempFile1
 	if [ "$i" == 1984 ] || [ "$i" == 1988 ]
 	then
 		echo "leap year!"
@@ -18,7 +18,7 @@ done
         sed -i 's/-//' TempFile3
 	sed -i 's/-//' TempFile3
 
-	awk '{print NR " " $0}' TempFile3 > smhiLund_8089.csv
+	awk '{print NR " " $0}' TempFile3 > ../datasets/smhiLund_8089.csv
 	
 	#Clean-up of temporary files
 	rm TempFile1
